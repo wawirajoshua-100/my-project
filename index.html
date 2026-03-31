@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MILDRED CHEROTICH | Computer Science Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Outfit:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <!-- Animated Background -->
+    <div class="bg-container">
+        <canvas id="particleCanvas"></canvas>
+        <div class="gradient-orbs">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <span class="logo-icon">MC</span>
+                <span class="logo-text">Portfolio</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#modules" class="nav-link">Modules</a></li>
+                <li><a href="#evidence" class="nav-link">Evidence</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-icon"></span>
+                <span>KNQF Level 6 | Cycle 3</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">MILDRED</span>
+                <span class="title-line accent">CHEROTICH</span>
+            </h1>
+            <p class="hero-subtitle">Computer Science Professional Portfolio</p>
+            <div class="hero-details">
+                <div class="detail-item">
+                    <span class="detail-label">Admission No.</span>
+                    <span class="detail-value">TDC113-C002-0004/2025</span>
+                </div>
+                <div class="detail-divider"></div>
+                <div class="detail-item">
+                    <span class="detail-label">Programme</span>
+                    <span class="detail-value">Computer Science</span>
+                </div>
+            </div>
+            <div class="hero-actions">
+                <a href="#modules" class="btn btn-primary">
+                    <span>Explore Modules</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </a>
+                <a href="#evidence" class="btn btn-secondary">Upload Evidence</a>
+            </div>
+        </div>
+            <div class="hero-visual">
+                <div class="visual-frame">
+                    <div class="frame-inner" id="profileImageContainer">
+                        <!-- Your Profile Image Goes Here -->
+                        <img id="profileImage" src="IMAGES/image.png" alt="Mildred Cherotich Profile" class="profile-img">
+            
+                        <!-- Default SVG Placeholder (Hidden when image loads) -->
+                        <div class="profile-placeholder">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                                <circle cx="12" cy="7" r="4" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="frame-decoration"></div>
+                </div>
+            </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">Introduction</span>
+                <h2 class="section-title">About My Journey</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                            <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                        </svg>
+                    </div>
+                    <h3>Academic Excellence</h3>
+                    <p>Pursuing Computer Science at KNQF Level 6, demonstrating proficiency in programming, networking,
+                        database management, and emerging technologies.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                            <line x1="8" y1="21" x2="16" y2="21" />
+                            <line x1="12" y1="17" x2="12" y2="21" />
+                        </svg>
+                    </div>
+                    <h3>Technical Skills</h3>
+                    <p>Hands-on experience with modern development tools, operating systems configuration, network
+                        infrastructure, and web technologies.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg>
+                    </div>
+                    <h3>Industry Ready</h3>
+                    <p>480 hours of industry training with practical exposure to real-world ICT challenges and
+                        professional work environments.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                        </svg>
+                    </div>
+                    <h3>Certified Professional</h3>
+                    <p>Working towards multiple Cisco certifications aligned with core units to validate technical
+                        competencies.</p>
+                </div>
+            </div>
+            <div class="stats-bar">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="6">0</span>
+                    <span class="stat-label">Modules</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="12">0</span>
+                    <span class="stat-label">Units</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="2980">0</span>
+                    <span class="stat-label">Hours</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="298">0</span>
+                    <span class="stat-label">Credits</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modules Section -->
+    <section id="modules" class="modules-section">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">Curriculum</span>
+                <h2 class="section-title">Course Modules</h2>
+                <p class="section-desc">Comprehensive curriculum covering all aspects of Computer Science at KNQF Level
+                    6</p>
+            </div>
+
+            <div class="modules-tabs">
+                <div class="tabs-nav">
+                    <button class="tab-btn active" data-tab="module1">Module I</button>
+                    <button class="tab-btn" data-tab="module2">Module II</button>
+                    <button class="tab-btn" data-tab="module3">Module III</button>
+                    <button class="tab-btn" data-tab="module4">Module IV</button>
+                    <button class="tab-btn" data-tab="module5">Module V</button>
+                    <button class="tab-btn" data-tab="module6">Module VI</button>
+                </div>
+
+                <div class="tabs-content">
+                    <!-- Module I -->
+                    <div class="tab-panel active" id="module1">
+                        <div class="module-header">
+                            <h3>Module I</h3>
+                            <span class="module-hours">420 Hours | 42 Credits</span>
+                        </div>
+                        <div class="units-grid">
+                            <div class="unit-card core-unit" data-unit="CR01">
+                                <div class="unit-badge core">Core</div>
+                                <div class="unit-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <rect x="4" y="4" width="16" height="16" rx="2" />
+                                        <rect x="9" y="9" width="6" height="6" />
+                                        <line x1="9" y1="2" x2="9" y2="4" />
+                                        <line x1="15" y1="2" x2="15" y2="4" />
+                                        <line x1="9" y1="20" x2="9" y2="22" />
+                                        <line x1="15" y1="20" x2="15" y2="22" />
+                                    </svg>
+                                </div>
+                                <h4>Computer Organisation and Architecture</h4>
+                                <p class="unit-code">ICT/CU/CS/CR/01/6/MA</p>
+                                <div class="unit-meta">
+                                    <span>180 Hours</span>
+                                    <span>18 Credits</span>
+                                </div>
+                                <button class="unit-action"
+                                    onclick="openUploadModal('CR01', 'Computer Organisation and Architecture', true)">
+                                    <span>Upload Evidence</span>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                        <polyline points="17 8 12 3 7 8" />
+                                        <line x1="12" y1="3" x2="12" y2="15" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="unit-card core-unit" data-unit="CR02">
+                                <div class="unit-badge core">Core</div>
+                                <div class="unit-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                                        <line x1="8" y1="21" x2="16" y2="21" />
+                                        <line x1="12" y1="17" x2="12" y2="21" />
+                                    </svg>
+                                </div>
+                                <h4>Operating Systems Configuration</h4>
+                                <p class="unit-code">ICT/CU/CS/CR/02/6/MA</p>
+                                <div class="unit-meta">
+                                    <span>240 Hours</span>
+                                    <span>24 Credits</span>
+                                </div>
+                                <button class="unit-action"
+                                    onclick="openUploadModal('CR02', 'Operating Systems Configuration', true)">
+                                    <span>Upload Evidence</span>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                        <polyline points="17 8 12 3 7 8" />
+                                        <line x1="12" y1="3" x2="12" y2="15" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Module II -->
+                    <div class="tab-panel" id="module2">
+                        <div class="module-header">
+                            <h3>Module II</h3>
+                            <span class="module-hours">410 Hours | 41 Credits</span>
+                        </div>
+                        <div class="units-grid">
+                            <div class="unit-card core-unit" data-unit="CR03">
+                                <div class="unit-badge core">Core</div>
+                                <div class="unit-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <line x1="2" y1="12" x2="22" y2="12" />
+                                        <path
+                                            d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                                    </svg>
+                                </div>
+                                <h4>Networking and Distributed Systems</h4>
+                                <p class="unit-code">ICT/CU/CS/CR/03/6/MA</p>
+                                <div class="unit-meta">
+                                    <span>220 Hours</span>
+                                    <span>22 Credits</span>
+                                </div>
+                                <button class="unit-action"
+                                    onclick="openUploadModal('CR03', 'Networking and Distributed Systems', true)">
+                                    <span>Upload Evidence</span>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                        <polyline points="17 8 12 3 7 8" />
+                                        <line x1="12" y1="3" x2="12" y2="15" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="unit-card core-unit" data-unit="CR04">
+                                <div class="unit-badge core">Core</div>
+                                <div class="unit-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M12 19l7-7 3 3-7 7-3-3z" />
+                                        <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z" />
+                                        <path d="M2 2l7.586 7.586" />
+                                        <circle cx="11" cy="11" r="2" />
+                                    </svg>
+                                </div>
+                                <h4>Graphics Design</h4>
+                                <p class="unit-code">ICT/CU/CS/CR/04/6/MA</p>
+                                <div class="unit-meta">
+                                    <span>190 Hours</span>
+                                    <span>19 Credits</span>
+                                </div>
+                                <button class="unit-action" onclick="openUploadModal('CR04', 'Graphics Design', true)">
+                                    <span>Upload Evidence</span>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                        <polyline points="17 8 12 3 7 8" />
+                                        <line x1="12" y1="3" x2="12" y2="15" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Module III -->
+                    <div class="tab-panel" id="module3">
+                        <div class="module-header">
+                            <h3>Module III</h3>
+                            <span class="module-hours">430 Hours | 43 Credits</span>
+                        </div>
+                        <div class="units-grid">
+                            <div class="unit-card core-unit" data-unit="CR05">
+                                <div class="unit-badge core">Core</div>
+                                <div class="unit-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <ellipse cx="12" cy="5" rx="9" ry="3" />
+                                        <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+                                        <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+                                    </svg>
+                                </div>
+                                <h4>Database Management</h4>
+                                <p class="unit-code">ICT/CU/CS/CR/05/6/MA</p>
+                                <div class="unit-meta">
+                                    <span>210 Hours</span>
+                                    <span>21 Credits</span>
+                                </div>
+                                <button class="unit-action"
+                                    onclick="openUploadModal('CR05', 'Database Management', true)">
+                                    <span>Upload Evidence</span>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                        <polyline points="17 8 12 3 7 8" />
+                                        <line x1="12" y1="3" x2="12" y2="15" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="unit-card core-unit" data-unit="CR06">
+                                <div class="unit-badge core">Core</div>
+                                <div class="unit-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <polyline points="16 18 22 12 16 6" />
+                                        <polyline points="8 6 2 12 8 18" />
+                                        <line x1="12" y1="2" x2="12" y2="22" />
+                                    </svg>
+                                </div>
+                                <h4>Web Designing</h4>
+                                <p class="unit-code">ICT/CU/CS/CR/06/6/MA</p>
+                                <div class="unit-meta">
+                                    <span>220 Hours</span>
+                                    <span>22 Credits</span>
+                                </div>
+                                <button class="unit-action" onclick="openUploadModal('CR06', 'Web Designing', true)">
+                                    <span>Upload Evidence</span>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                        <polyline points="17 8 12 3 7 8" />
+                                        <line x1="12" y1="3" x2="12" y2="15" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Module IV -->
+                    <div class="tab-panel" id="module4">
+                        <div class="module-header">
+                            <h3>Module IV</h3>
+                            <span class="module-hours">420 Hours | 42 Credits</span>
+                        </div>
+                        <div class="units-grid">
+                            <div class="unit-card common-unit" data-unit="CC01">
+                                <div class="unit-badge common">Common</div>
+                                <div class="unit-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path
+                                            d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+                                    </svg>
+                                </div>
+                                <h4>Basic Electronics Skills</h4>
+                                <p class="unit-code">ICT/CU/CS/CC/01/6/MA</p>
+                                <div class="unit-meta">
+                                    <span>180 Hours</span>
+                                    <span>18 Credits</span>
+                                </div>
+                                <button class="unit-action"
+                                    onclick="openUploadModal('CC01', 'Basic Electronics Skills', false)">
+                                    <span>Upload Evidence</span>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                        <polyline points="17 8 12 3 7 8" />
+                                        <line x1="12" y1="3" x2="12" y2="15" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="unit-card common-unit" data-unit="CC02">
+                                <div class="unit-badge common">Common</div>
+                                <div class="unit-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <polyline points="4 17 10 11 4 5" />
+                                        <line x1="12" y1="19" x2="20" y2="19" />
+                                    </svg>
+                                </div>
+                                <h4>Fundamentals of Programming</h4>
+                                <p class="unit-code">ICT/CU/CS/CC/02/6/MA</p>
+                                <div class="unit-meta">
+                                    <span>200 Hours</span>
+                                    <span>20 Credits</span>
+                                </div>
+                                <button class="unit-action"
+                                    onclick="openUploadModal('CC02', 'Fundamentals of Programming', false)">
+                                    <span>Upload Evidence</span>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                        <polyline points="17 8 12 3 7 8" />
+                                        <line x1="12" y1="3" x2="12" y2="15" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="unit-card basic-unit" data-unit="BC02">
+                                <div class="unit-badge basic">Basic</div>
+                                <div class="unit-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                                        <path d="M9 12l2 2 4-4" />
+                                    </svg>
+                                </div>
+                                <h4>Work Ethics and Practices</h4>
+                                <p class="unit-code">ICT/CU/CS/BC/02/6/MA</p>
+                                <div class="unit-meta">
+                                    <span>40 Hours</span>
+                                    <span>4 Credits</span>
+                                </div>
+                                <button class="unit-action"
+                                    onclick="openUploadModal('BC02', 'Work Ethics and Practices', false)">
+                                    <span>Upload Evidence</span>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                        <polyline points="17 8 12 3 7 8" />
+                                        <line x1="12" y1="3" x2="12" y2="15" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Module V -->
+                    <div class="tab-panel" id="module5">
+                        <div class="module-header">
+                            <h3>Module V</h3>
+                            <span class="module-hours">400 Hours | 40 Credits</span>
+                        </div>
+                        <div class="units-grid">
+                            <div class="unit-card basic-unit" data-unit="BC03">
+                                <div class="unit-badge basic">Basic</div>
+                                <div class="unit-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                                        <path d="M2 17l10 5 10-5" />
+                                        <path d="M2 12l10 5 10-5" />
+                                    </svg>
+                                </div>
+                                <h4>Entrepreneurial Skills</h4>
+                                <p class="unit-code">ICT/CU/CS/BC/03/6/MA</p>
+                                <div class="unit-meta">
+                                    <span>40 Hours</span>
+                                    <span>4 Credits</span>
+                                </div>
+                                <button class="unit-action"
+                                    onclick="openUploadModal('BC03', 'Entrepreneurial Skills', false)">
+                                    <span>Upload Evidence</span>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                        <polyline points="17 8 12 3 7 8" />
+                                        <line x1="12" y1="3" x2="12" y2="15" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="unit-card core-unit" data-unit="CR07">
+                                <div class="unit-badge core">Core</div>
+                                <div class="unit-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path
+                                            d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                                        <polyline points="7.5 4.21 12 6.81 16.5 4.21" />
+                                        <polyline points="7.5 19.79 7.5 14.6 3 12" />
+                                        <polyline points="21 12 16.5 14.6 16.5 19.79" />
+                                        <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+                                        <line x1="12" y1="22.08" x2="12" y2="12" />
+                                    </svg>
+                                </div>
+                                <h4>Algorithms and Data Structures</h4>
+                                <p class="unit-code">ICT/CU/CS/CR/07/6/MA</p>
+                                <div class="unit-meta">
+                                    <span>190 Hours</span>
+                                    <span>19 Credits</span>
+                                </div>
+                                <button class="unit-action"
+                                    onclick="openUploadModal('CR07', 'Algorithms and Data Structures', true)">
+                                    <span>Upload Evidence</span>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                        <polyline points="17 8 12 3 7 8" />
+                                        <line x1="12" y1="3" x2="12" y2="15" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="unit-card common-unit" data-unit="CC03">
+                                <div class="unit-badge common">Common</div>
+                                <div class="unit-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <line x1="12" y1="20" x2="12" y2="10" />
+                                        <line x1="18" y1="20" x2="18" y2="4" />
+                                        <line x1="6" y1="20" x2="6" y2="16" />
+                                    </svg>
+                                </div>
+                                <h4>Mathematics for Computer Science</h4>
+                                <p class="unit-code">ICT/CU/CS/CC/03/6/MA</p>
+                                <div class="unit-meta">
+                                    <span>170 Hours</span>
+                                    <span>17 Credits</span>
+                                </div>
+                                <button class="unit-action"
+                                    onclick="openUploadModal('CC03', 'Mathematics for Computer Science', false)">
+                                    <span>Upload Evidence</span>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                        <polyline points="17 8 12 3 7 8" />
+                                        <line x1="12" y1="3" x2="12" y2="15" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Module VI -->
+                    <div class="tab-panel" id="module6">
+                        <div class="module-header">
+                            <h3>Module VI</h3>
+                            <span class="module-hours">900 Hours | 90 Credits</span>
+                        </div>
+                        <div class="units-grid">
+                            <div class="unit-card basic-unit" data-unit="BC01">
+                                <div class="unit-badge basic">Basic</div>
+                                <div class="unit-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                                    </svg>
+                                </div>
+                                <h4>Communication Skills</h4>
+                                <p class="unit-code">ICT/CU/CS/BC/01/6/MA</p>
+                                <div class="unit-meta">
+                                    <span>40 Hours</span>
+                                    <span>4 Credits</span>
+                                </div>
+                                <button class="unit-action"
+                                    onclick="openUploadModal('BC01', 'Communication Skills', false)">
+                                    <span>Upload Evidence</span>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                        <polyline points="17 8 12 3 7 8" />
+                                        <line x1="12" y1="3" x2="12" y2="15" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="unit-card core-unit" data-unit="CR08">
+                                <div class="unit-badge core">Core</div>
+                                <div class="unit-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                                        <line x1="3" y1="9" x2="21" y2="9" />
+                                        <line x1="9" y1="21" x2="9" y2="9" />
+                                    </svg>
+                                </div>
+                                <h4>Information Systems Development</h4>
+                                <p class="unit-code">ICT/CU/CS/CR/08/6/MA</p>
+                                <div class="unit-meta">
+                                    <span>200 Hours</span>
+                                    <span>20 Credits</span>
+                                </div>
+                                <button class="unit-action"
+                                    onclick="openUploadModal('CR08', 'Information Systems Development', true)">
+                                    <span>Upload Evidence</span>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                        <polyline points="17 8 12 3 7 8" />
+                                        <line x1="12" y1="3" x2="12" y2="15" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="unit-card common-unit" data-unit="CC04">
+                                <div class="unit-badge common">Common</div>
+                                <div class="unit-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <circle cx="12" cy="12" r="3" />
+                                        <path d="M12 1v2" />
+                                        <path d="M12 21v2" />
+                                        <path d="M4.22 4.22l1.42 1.42" />
+                                        <path d="M18.36 18.36l1.42 1.42" />
+                                        <path d="M1 12h2" />
+                                        <path d="M21 12h2" />
+                                        <path d="M4.22 19.78l1.42-1.42" />
+                                        <path d="M18.36 5.64l1.42-1.42" />
+                                    </svg>
+                                </div>
+                                <h4>Artificial Intelligence Concepts</h4>
+                                <p class="unit-code">ICT/CU/CS/CC/04/6/MA</p>
+                                <div class="unit-meta">
+                                    <span>180 Hours</span>
+                                    <span>18 Credits</span>
+                                </div>
+                                <button class="unit-action"
+                                    onclick="openUploadModal('CC04', 'Artificial Intelligence Concepts', false)">
+                                    <span>Upload Evidence</span>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                        <polyline points="17 8 12 3 7 8" />
+                                        <line x1="12" y1="3" x2="12" y2="15" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="unit-card core-unit" data-unit="CR09">
+                                <div class="unit-badge core">Core</div>
+                                <div class="unit-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                                        <circle cx="12" cy="7" r="4" />
+                                    </svg>
+                                </div>
+                                <h4>Industry Training</h4>
+                                <p class="unit-code">ICT/CU/CS/CR/09/6/MA</p>
+                                <div class="unit-meta">
+                                    <span>480 Hours</span>
+                                    <span>48 Credits</span>
+                                </div>
+                                <button class="unit-action"
+                                    onclick="openUploadModal('CR09', 'Industry Training', true)">
+                                    <span>Upload Evidence</span>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                        <polyline points="17 8 12 3 7 8" />
+                                        <line x1="12" y1="3" x2="12" y2="15" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Evidence Section -->
+    <section id="evidence" class="evidence-section">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">Documentation</span>
+                <h2 class="section-title">Uploaded Evidence</h2>
+                <p class="section-desc">View and manage your uploaded documents, certificates, and media files</p>
+            </div>
+
+            <div class="evidence-filters">
+                <button class="filter-btn active" data-filter="all">All Units</button>
+                <button class="filter-btn" data-filter="core">Core Units</button>
+                <button class="filter-btn" data-filter="common">Common Units</button>
+                <button class="filter-btn" data-filter="basic">Basic Units</button>
+            </div>
+
+            <div class="evidence-grid" id="evidenceGrid">
+                <!-- Evidence cards will be dynamically populated -->
+                <div class="empty-state">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                        <polyline points="17 8 12 3 7 8" />
+                        <line x1="12" y1="3" x2="12" y2="15" />
+                    </svg>
+                    <h4>No Evidence Uploaded</h4>
+                    <p>Upload your exam results, certificates, and media files for each unit to build your portfolio.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="section-container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <span class="section-tag">Get in Touch</span>
+                    <h2 class="section-title">Contact Information</h2>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                    <polyline points="22,6 12,13 2,6" />
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="contact-label">Email</span>
+                                <span class="contact-value"><a href="mailto:mildred.cherotich@tvet.ac.ke">mildred.cherotich@tvet.ac.ke</a></span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="contact-label">Phone</span>
+                                <span class="contact-value"><a href="tel:+254 729 232331">+254 729 232331</a></span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="contact-label">Location</span>
+                                <span class="contact-value">Nairobi, Kenya</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                                    <line x1="8" y1="21" x2="16" y2="21" />
+                                    <line x1="12" y1="17" x2="12" y2="21" />
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="contact-label">Institution</span>
+                                <span class="contact-value">TVET CDACC</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span>Send Message</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <line x1="22" y1="2" x2="11" y2="13" />
+                                <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="logo-icon">MC</span>
+                <span class="logo-text">Portfolio</span>
+            </div>
+            <p class="footer-text">Computer Science Level 6 | KNQF Cycle 3</p>
+            <p class="footer-copyright">© 2025 Mildred Cherotich. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Upload Modal -->
+    <div class="modal-overlay" id="uploadModal">
+        <div class="modal">
+            <div class="modal-header">
+                <h3 id="modalTitle">Upload Evidence</h3>
+                <button class="modal-close" onclick="closeUploadModal()">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18" />
+                        <line x1="6" y1="6" x2="18" y2="18" />
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p class="modal-unit-info" id="modalUnitInfo"></p>
+
+                <div class="upload-tabs">
+                    <button class="upload-tab active" data-upload="exam">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                            <polyline points="14 2 14 8 20 8" />
+                            <line x1="16" y1="13" x2="8" y2="13" />
+                            <line x1="16" y1="17" x2="8" y2="17" />
+                            <polyline points="10 9 9 9 8 9" />
+                        </svg>
+                        <span>Exam Results</span>
+                    </button>
+                    <button class="upload-tab" data-upload="video">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <polygon points="23 7 16 12 23 17 23 7" />
+                            <rect x="1" y="5" width="15" height="14" rx="2" ry="2" />
+                        </svg>
+                        <span>Video Evidence</span>
+                    </button>
+                    <button class="upload-tab" data-upload="photo">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                            <circle cx="8.5" cy="8.5" r="1.5" />
+                            <polyline points="21 15 16 10 5 21" />
+                        </svg>
+                        <span>Photo Evidence</span>
+                    </button>
+                    <button class="upload-tab" data-upload="certificate" id="certificateTab">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="8" r="7" />
+                            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+                        </svg>
+                        <span>Cisco Certificate</span>
+                    </button>
+                </div>
+
+                <div class="upload-panels">
+                    <div class="upload-panel active" id="examPanel">
+                        <div class="upload-zone" id="examUploadZone">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                <polyline points="17 8 12 3 7 8" />
+                                <line x1="12" y1="3" x2="12" y2="15" />
+                            </svg>
+                            <p>Drag and drop your exam results or click to browse</p>
+                            <span>Supports PDF, DOC, DOCX, Images</span>
+                            <input type="file" id="examFileInput" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" hidden>
+                        </div>
+                        <div class="uploaded-files" id="examFiles"></div>
+                    </div>
+
+                    <div class="upload-panel" id="videoPanel">
+                        <div class="upload-zone" id="videoUploadZone">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                <polyline points="17 8 12 3 7 8" />
+                                <line x1="12" y1="3" x2="12" y2="15" />
+                            </svg>
+                            <p>Drag and drop your video evidence or click to browse</p>
+                            <span>Supports MP4, WEBM, MOV</span>
+                            <input type="file" id="videoFileInput" accept=".mp4,.webm,.mov" hidden>
+                        </div>
+                        <div class="uploaded-files" id="videoFiles"></div>
+                    </div>
+
+                    <div class="upload-panel" id="photoPanel">
+                        <div class="upload-zone" id="photoUploadZone">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                <polyline points="17 8 12 3 7 8" />
+                                <line x1="12" y1="3" x2="12" y2="15" />
+                            </svg>
+                            <p>Drag and drop your photo evidence or click to browse</p>
+                            <span>Supports JPG, PNG, GIF</span>
+                            <input type="file" id="photoFileInput" accept=".jpg,.jpeg,.png,.gif" hidden>
+                        </div>
+                        <div class="uploaded-files" id="photoFiles"></div>
+                    </div>
+
+                    <div class="upload-panel" id="certificatePanel">
+                        <div class="upload-zone" id="certificateUploadZone">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                <polyline points="17 8 12 3 7 8" />
+                                <line x1="12" y1="3" x2="12" y2="15" />
+                            </svg>
+                            <p>Upload your Cisco Certificate for this unit</p>
+                            <span>Supports PDF, JPG, PNG</span>
+                            <input type="file" id="certificateFileInput" accept=".pdf,.jpg,.jpeg,.png" hidden>
+                        </div>
+                        <div class="uploaded-files" id="certificateFiles"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" onclick="closeUploadModal()">Cancel</button>
+                <button class="btn btn-primary" onclick="saveEvidence()">Save Evidence</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <div class="toast-icon"></div>
+        <span class="toast-message"></span>
+    </div>
+
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
